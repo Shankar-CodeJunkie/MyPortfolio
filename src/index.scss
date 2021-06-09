@@ -1,0 +1,211 @@
+@import 'carbon-components/scss/globals/scss/styles.scss';
+@import 'carbon-components/scss/globals/grid/grid';
+@import './assets/scss/carbon-override.scss';
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @media screen and (max-width: 700px) {
+    .site-sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .site-sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .site-sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+testing {
+  position: relative;
+}
+
+
+.item1 { grid-area: header; }
+.item3 { grid-area: main; 
+  //background-image: url('./images/image.jpg') no-repeat center center fixed;
+  //background-size: cover;
+  //background-color: red;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end:5;
+  color: #171717;
+  font-weight: 300;
+}
+.item4 {grid-area: right;}
+
+.name {
+  color: #0c0b0b;
+  font-weight: 300;
+  font-size: 4em;
+}
+
+
+.a {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end:2
+}
+
+.b {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end:3
+}
+
+.c {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end:5;
+  
+  
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main main main'
+    'main main main main main main';
+  grid-template-columns: 30px auto auto auto auto auto;  
+  grid-gap: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 20px 0;
+  font-size: 1rem;
+}
+
+.card {
+  margin-bottom: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    transition: all .2s ease-out;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+  text-align: left;
+}
+
+.skill-card {
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+  box-sizing: border-box;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  margin-bottom: 60px;
+}
+
+.skill-body{
+  text-align: center;
+  flex: 1 1 auto;
+}
+
+.responsive-body {
+  margin: 0 auto;
+    max-height: 100px;
+    padding-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.award-card {
+  position: relative;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);;
+  margin: 0.5rem 0 1rem 0;
+  margin-bottom: 60px;
+}
+
+.award-div {
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+    float: none;
+  }
+}
+
+.award-body {
+  flex: 1 1 auto;
+  text-align: left
+}
+
+.award-new {
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+  margin-top: 20px;
+}
+
+.site-sidebar {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  z-index: 2;
+  width: 25%;
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+  background-color: rgba(145,13,13,.8);
+  .site-sidebar-inner {
+    position: relative;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    padding: 45px 40px;
+  }
+  .person .person-avatar {
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .person .person-content {
+    margin-left: -40px;
+    margin-right: -40px;
+    .person-title {
+      font-size: 22px;
+      font-weight: 500;
+  }
+  }
+}
+
+
+

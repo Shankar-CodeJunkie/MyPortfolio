@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+
+.skills-heading {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.8;
+}
+
+.skills-box {
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+}
+
+.skill-title {
+  position: relative;
+  size: 70px;
+  line-height: 70px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.skill-container {
+  margin: 70px 0 0 0
+}
+
+
+
+.skill-image {
+  border: 1px 2px solid #ddd;
+  float: left;
+  width: 64 px;
+  padding: 10px 40px 10px 10px;
+  display: block;
+}
+
+@media screen and (max-width: 480px) {
+  .imggif {
+       width: 400px;
+  }
+}
