@@ -13,6 +13,7 @@
     "carbon-components": "^10.33.0",
     "carbon-components-react": "^7.33.0",
     "carbon-icons": "^7.0.7",
+    "material-ui": "^0.20.2",
     "mini-css-extract-plugin": "^1.5.0",
     "node-sass": "^5.0.0",
     "react": "^17.0.2",
