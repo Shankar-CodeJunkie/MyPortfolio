@@ -51,9 +51,7 @@ function Skills() {
                             <div className="skill-image">
                                 <img src={java} alt={'java'} title={'Java'}></img>
                             </div>
-                            <div className="skill-image">
-                           
-                            </div>
+                            
                         </div>
 
                     </Col>
